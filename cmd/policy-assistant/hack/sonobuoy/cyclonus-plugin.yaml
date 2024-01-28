@@ -1,6 +1,6 @@
 sonobuoy-config:
   driver: Job
-  plugin-name: cyclonus
+  plugin-name: policy-assistant
   result-format: junit
 spec:
   command:
@@ -9,7 +9,7 @@ spec:
   - "--include=conflict"
   - "--exclude=egress,direction"
   - "--junit-results-file=/tmp/results/junit.xml"
-  image: mfenwick100/sonobuoy-cyclonus:latest
+  image: mfenwick100/sonobuoy-policy-assistant:latest
   imagePullPolicy: Always
   name: plugin
   resources: {}

@@ -14,7 +14,7 @@ import (
 
 const (
 	agnhostImage        = "e2e-test-images/agnhost:2.43"
-	cyclonusWorkerImage = "mfenwick100/cyclonus-worker:latest"
+	cyclonusWorkerImage = "mfenwick100/policy-assistant-worker:latest"
 )
 
 func NewPod(ns string, name string, labels map[string]string, ip string, containers []*Container) *Pod {

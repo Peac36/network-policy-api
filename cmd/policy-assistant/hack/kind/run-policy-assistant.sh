@@ -38,7 +38,7 @@ kind export kubeconfig --name "$CLUSTER_NAME"
 kubectl get nodes
 kubectl get pods -A
 
-# run cyclonus
+# run policy-assistant
 if [ "$RUN_FROM_SOURCE" == true ]; then
   # don't quote this -- we want word splitting here!
   go run ../../cmd/cyclonus/main.go $FROM_SOURCE_ARGS
@@ -49,7 +49,7 @@ else
   JOB_NAME=job.batch/cyclonus
   JOB_NS=netpol
 
-  # set up cyclonus
+  # set up policy-assistant
   kubectl create ns "$JOB_NS"
   kubectl create clusterrolebinding cyclonus --clusterrole=cluster-admin --serviceaccount="$JOB_NS":cyclonus
   kubectl create sa cyclonus -n "$JOB_NS"

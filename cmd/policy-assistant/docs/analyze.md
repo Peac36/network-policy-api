@@ -9,11 +9,11 @@ flags may be provided in a single invocation.
 ## Supported flags
 
 ```bash
-cyclonus analyze -h
+policy-assistant analyze -h
 analyze network policies
 
 Usage:
-  cyclonus analyze [flags]
+  policy-assistant analyze [flags]
 
 Flags:
   -A, --all-namespaces           reads kube resources from all namespaces; same as kubectl's '--all-namespaces'/'-A' flag

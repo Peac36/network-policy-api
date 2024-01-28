@@ -11,7 +11,7 @@ and compare actual measured connectivity to expected connectivity using a truth 
 generate network policies, create and probe against kubernetes, and compare to expected results
 
 Usage:
-  cyclonus generate [flags]
+  policy-assistant generate [flags]
 
 Flags:
       --allow-dns                          if using egress, allow tcp and udp over port 53 for DNS resolution (default true)

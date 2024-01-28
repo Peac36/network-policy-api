@@ -22,19 +22,19 @@ spec:
       restartPolicy: Never
       containers:
         - command:
-            - ./cyclonus
+            - ./policy-assistant
             - generate
-          name: cyclonus
+          name: policy-assistant
           imagePullPolicy: IfNotPresent
           image: mfenwick100/cyclonus:latest
-      serviceAccount: cyclonus
+      serviceAccount: policy-assistant
 ```
 
 Then create a namespace, service account, and job:
 ```bash
 kubectl create ns netpol
-kubectl create clusterrolebinding cyclonus --clusterrole=cluster-admin --serviceaccount=netpol:cyclonus
-kubectl create sa cyclonus -n netpol
+kubectl create clusterrolebinding policy-assistant --clusterrole=cluster-admin --serviceaccount=netpol:policy-assistant
+kubectl create sa policy-assistant -n netpol
   
 kubectl create -f job.yaml -n netpol
 ```

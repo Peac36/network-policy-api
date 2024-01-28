@@ -24,4 +24,4 @@ jobs:
 
       - name: Run Cyclonus
         working-directory: hack/kind
-        run: CNI=${{ github.event.inputs.cni }} RUN_FROM_SOURCE=true FROM_SOURCE_ARGS="${{ github.event.inputs.cyclonus_args }}" ./run-cyclonus.sh
+        run: CNI=${{ github.event.inputs.cni }} RUN_FROM_SOURCE=true FROM_SOURCE_ARGS="${{ github.event.inputs.cyclonus_args }}" ./run-policy-assistant.sh

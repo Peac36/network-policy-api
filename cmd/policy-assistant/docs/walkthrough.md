@@ -49,7 +49,7 @@ Examples:
 - `cyclonus probe`:
 
   ```bash
-  go run cmd/cyclonus/main.go probe \
+  go run cmd/policy-assistant/main.go probe \
     --server-protocol=tcp \
     --server-port=80
   ```
@@ -57,7 +57,7 @@ Examples:
 - `cyclonus generate` -- see [Understanding Cyclonus test runs](./test-runs.md):
 
   ```bash
-  go run cmd/cyclonus/main.go generate \
+  go run cmd/policy-assistant/main.go generate \
     --include conflict \
     --job-timeout-seconds 2 \
     --ignore-loopback=true \

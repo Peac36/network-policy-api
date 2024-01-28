@@ -24,7 +24,7 @@ type RootFlags struct {
 func SetupRootCommand() *cobra.Command {
 	flags := &RootFlags{}
 	command := &cobra.Command{
-		Use:   "cyclonus",
+		Use:   "policy-assistant",
 		Short: "explain, probe, and query network policies",
 		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
 			return utils.SetUpLogger(flags.Verbosity)

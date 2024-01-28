@@ -5,11 +5,11 @@ Run a connectivity probe against a Kubernetes cluster.
 ## Supported flags
 
 ```bash
-cyclonus probe -h
+policy-assistant probe -h
 run a connectivity probe against kubernetes pods
 
 Usage:
-  cyclonus probe [flags]
+  policy-assistant probe [flags]
 
 Flags:
       --all-available                      if true, probe all available ports and protocols on each pod (default true)

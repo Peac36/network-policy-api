@@ -22,4 +22,4 @@ jobs:
           go-version: 1.18
       - name: Run Cyclonus
         working-directory: hack/kind
-        run: CNI=calico RUN_FROM_SOURCE=true FROM_SOURCE_ARGS="${{ github.event.inputs.cyclonus_args }}" ./run-cyclonus.sh
+        run: CNI=calico RUN_FROM_SOURCE=true FROM_SOURCE_ARGS="${{ github.event.inputs.cyclonus_args }}" ./run-policy-assistant.sh

@@ -7,6 +7,6 @@ fmt:
 vet:
 	go vet ./cmd/... ./pkg/...
 
-cyclonus:
-	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ./cmd/cyclonus/cyclonus ./cmd/cyclonus
-	docker build -t docker.io/mfenwick100/cyclonus:latest ./cmd/cyclonus
+policy-assistant:
+	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ./cmd/policy-assistant/policy-assistant ./cmd/policy-assistant
+	docker build -t docker.io/mfenwick100/policy-assistant:latest ./cmd/policy-assistant
